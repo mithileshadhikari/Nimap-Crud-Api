@@ -1,0 +1,11 @@
+products\products\conroller\ProductController.class
+products\products\conroller\CategoryController.class
+products\products\dao\ProductDao.class
+products\products\model\Product.class
+products\products\service\ProductService.class
+products\products\service\CategoryServiceImpl.class
+products\products\dao\CategoryDao.class
+products\products\service\ProductServiceImpl.class
+products\products\model\Category.class
+products\products\service\CategoryService.class
+products\products\ProductsApplication.class
