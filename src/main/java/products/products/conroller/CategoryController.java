@@ -85,5 +85,11 @@ public class CategoryController {
 		
 	}
 
+	@GetMapping(value = "/paging/{pageNumber}/{pageSize}")
+	public Page<Category> catpaging(@PathVariable Integer pageNumber,@PathVariable Integer pageSize){
+		
+		return categoryService.getCatpaging(pageNumber ,pageSize )
+	}
+
 	
 }
