@@ -20,6 +20,12 @@ Product updateProduct(int id,Product product);
 	
 	boolean deleteProduct(int id);
 
+	Page<Product> getCatpaging(Integer pageNumber, Integer pageSize){
+		
+		Pageable pageable = PageRequest.of(pageNumber,pageSize);
+		return ProductDao.findAll(pageable);
+	}
+
 
 
 
