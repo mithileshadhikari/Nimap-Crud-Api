@@ -83,4 +83,10 @@ public class ProductController {
 		return response;
 		
 	}
+
+	@GetMapping(value = "/paging/{pageNumber}/{pageSize}")
+	public Page<Product> prodpaging(@PathVariable Integer pageNumber,@PathVariable Integer pageSize){
+		
+		return ProductyService.getProdpaging(pageNumber ,pageSize )
+	}
 }
