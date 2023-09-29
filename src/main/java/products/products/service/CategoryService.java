@@ -18,4 +18,10 @@ Category updateCategory(int id,Category category);
 	
 	boolean deleteCategory(int id);
 
+		Page<Category> getCatpaging(Integer pageNumber, Integer pageSize){
+		
+		Pageable pageable = PageRequest.of(pageNumber,pageSize);
+		return CategoryDao.findAll(pageable);
+	}
+
 }
